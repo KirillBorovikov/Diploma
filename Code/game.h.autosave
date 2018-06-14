@@ -1,0 +1,31 @@
+#ifndef GAME_H
+#define GAME_H
+#include "winery2.h"
+
+
+class Game//Экземпляр игры в узле
+{
+
+public:
+    int num;
+    int players;
+    Winery2 *g;
+    
+    double ver;
+    Game *l,*r;
+    Game(int,int,int,int);
+    void Show();
+    Game *GetLeft()
+     {
+           return l;
+     }
+
+    Game *GetRight()
+     {
+           return r;
+     }
+   ~Game();
+
+};
+
+#endif // GAME_H

@@ -1,0 +1,23 @@
+#include "game.h"
+#include <iostream>
+
+using namespace std;
+Game::Game(int play,int i,int j,int num1)
+{
+    players = play;
+    num=num1;
+    ver=1;
+    g = new Winery2(i,j,players);
+    char ch[30]= "C:\\programms\\Diplom\\z1.txt";
+    ch[21]=num1+'0';
+    g->Fill(ch);
+}
+void Game::Show()
+{
+    g->Show();
+}
+Game::~Game()
+{
+
+}
+

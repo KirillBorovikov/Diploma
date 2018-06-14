@@ -1,0 +1,19 @@
+#ifndef WINERY_H
+#define WINERY_H
+#include <string>
+#include "element.h"
+using namespace std;
+class Winery
+{
+public:
+    Element **position;
+    int i;
+    int j;
+    int players;
+    Winery(int,int,int);
+    void Show();
+    void Fill(char[]);
+    ~Winery();
+};
+
+#endif // WINERY_H
